@@ -18,14 +18,14 @@ def check(password):
      elif not char.isalnum():
         has_special_char = True
   if not (has_uppercase and has_lowercase and has_digit and has_special_char):
-     print("\n! Password weak ,lack of characters\n  For Better password mix digits,uppercase,lowercase,special characters")
+     print("\n! Password weak ,lack of characters\n\n  For Better password mix digits,uppercase,lowercase,special characters")
 
   # Additional checks for common patterns can be added here
   else:
      print("\nPassword is strong")
 
 while True:
-  choise=input("\ncheck password complexity \n       --------\nEnter 1 to Continue \n\n")
+  choise=input("\ncheck password complexity \n       --------\nEnter 1 to Continue \nEnter 0 for exit\n")
   if choise == '1':
     password=input("Enter the password :")
     check(password)

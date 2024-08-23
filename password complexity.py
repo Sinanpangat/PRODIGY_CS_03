@@ -24,10 +24,10 @@ def check(password):
   else:
      print("\nPassword is strong")
 
-while True:
-  choise=input("\ncheck password complexity \n       --------\nEnter 1 to Continue \nEnter 0 for exit\n")
-  if choise == '1':
-    password=input("Enter the password :")
-    check(password)
-  else:
-       break
+
+choise=input("\ncheck password complexity \n       --------\nEnter 1 to Continue \nEnter 0 for exit\n")
+if choise == '1':
+   password=input("Enter the password :")
+   check(password)
+else:
+   exit

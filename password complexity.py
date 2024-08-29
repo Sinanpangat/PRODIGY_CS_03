@@ -1,5 +1,5 @@
 import string
-def check(password):
+def check(password): #function for check password complexity
   if len(password) < 8:
     print("\n! Password too short")
 
